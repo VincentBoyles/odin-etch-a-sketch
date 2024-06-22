@@ -21,7 +21,4 @@ body {
 #gridBox {
     display: flex;
     flex-wrap: wrap;
-    width: 1px;
-    height: 1px;
-    border-style: solid;
 }
