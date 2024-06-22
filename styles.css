@@ -1,18 +1,27 @@
 body {
     display: flex;
     background-color: rgb(110, 144, 207);
+    justify-content: center;
 }
 
 #title {
     font-family: 'Courier New', Courier, monospace;
     border-style:dashed;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
 }
 
 #gridBorder {
     border: 3px solid black;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     background-color: rgb(179, 200, 245);
+}
+
+#gridBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1px;
+    height: 1px;
+    border-style: solid;
 }

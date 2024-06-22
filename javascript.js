@@ -1,4 +1,3 @@
-
 // Container for the body element
 const container = document.createElement('div');
 document.body.appendChild(container);
@@ -12,8 +11,14 @@ container.appendChild(title);
 
 
 //Container border for the grid
-const gridContainer = document.createElement('div');
-document.body.appendChild(gridContainer);
 const gridBorder = document.createElement('div');
 gridBorder.setAttribute('id', 'gridBorder');
-gridContainer.appendChild(gridBorder);
+container.appendChild(gridBorder);
+
+// Creation of grid boxes
+for (let i = 1; i < 257; i++) { 
+let gridBox = document.createElement('div');
+gridBox.setAttribute('id',  'gridBox');
+gridBorder.appendChild(gridBox);
+}
+
