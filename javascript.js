@@ -23,11 +23,10 @@ gridBox.setAttribute('id', 'gridBox');
 gridBox.style.height = "70px";
 gridBox.style.width =  "70px";
 
-
 // Mouse over event
 gridBox.addEventListener('mouseover', event => {
     event.target.style.backgroundColor = 'black';
 });
 gridBorder.appendChild(gridBox);
-}
+};
 
