@@ -17,11 +17,17 @@ gridBorder.setAttribute('id', 'gridBorder');
 container.appendChild(gridBorder);
 
 // Creation of grid boxes
-for (let i = 0; i <256; i++) { 
-let gridBox = document.createElement('div');
+for (let i = 0; i <100; i++) { 
+const gridBox = document.createElement('div');
 gridBox.setAttribute('id', 'gridBox');
-gridBox.height = `${700/numberofGrid}px`
-gridBox.width = `${700/numberofGrid}px`
+gridBox.style.height = "70px";
+gridBox.style.width =  "70px";
+
+
+// Mouse over event
+gridBox.addEventListener('mouseover', event => {
+    event.target.style.backgroundColor = 'black';
+});
 gridBorder.appendChild(gridBox);
 }
 
