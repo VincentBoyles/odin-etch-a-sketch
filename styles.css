@@ -21,7 +21,11 @@ body {
     background-color: rgb(179, 200, 245);
 }
 
-#gridBox { 
+#gridBox, #newBox { 
     box-sizing: border-box;
     border: 1px solid black;
+}
+
+#buttonContainer {
+    padding-bottom: 20px;
 }
